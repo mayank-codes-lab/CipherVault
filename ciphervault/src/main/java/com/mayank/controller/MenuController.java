@@ -2,6 +2,8 @@ package com.mayank.controller;
 
 import java.util.Scanner;
 
+import com.mayank.service.FileService;
+
 public class MenuController {
     Scanner sc = new Scanner(System.in);
     public void MainMenu(){
@@ -31,6 +33,8 @@ public class MenuController {
             switch (choice) {
                 case 1:
                     System.out.println("Encryption of Documnet is under Process you will see it Soon!");
+                    FileService fs = new FileService();
+                    fs.fileEncryption();
                     break;
                 case 2:
                     System.out.println("Decryption of Documents is Under Process you will see is Soon!");
