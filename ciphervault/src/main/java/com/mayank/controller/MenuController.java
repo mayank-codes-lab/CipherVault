@@ -34,7 +34,7 @@ public class MenuController {
                 case 1:
                     System.out.println("Encryption of Documnet is under Process you will see it Soon!");
                     FileService fs = new FileService();
-                    fs.fileEncryption();
+                    fs.processFile();
                     break;
                 case 2:
                     System.out.println("Decryption of Documents is Under Process you will see is Soon!");
